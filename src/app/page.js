@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import FilterLayout from "@/components/FilterLayout";
 import { getProducts } from "@/lib/api";
 import "./page.css";
+import 'remixicon/fonts/remixicon.css'
 
 // server component
 export default async function Home() {

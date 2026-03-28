@@ -1,30 +1,101 @@
 .navbar {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* TOP ROW STYLING */
+.nav-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
-  border-bottom: 1px solid #ddd;
+  height: 80px;
 }
 
-.logo {
-  font-size: 18px;
+/* The Magic Trick for Centering: 
+   Both sides take equal space (flex: 1) */
+.nav-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-actions {
+  justify-content: flex-end;
+  gap: 25px; /* Spacing between icons */
+}
+
+.nav-actions i {
+  font-size: 22px;
+  cursor: pointer;
+  color: #252020;
+}
+
+/* LOGO STYLING */
+.nav-logo {
+  flex: 0 0 auto; /* Don't let the logo grow or shrink */
+  font-size: 25px;
   font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: center;
 }
 
-.menu {
+/* BRAND ICON STYLING */
+.brand-icon {
+  height: 35px; /* Adjust based on your preference */
+  width: auto;
+}
+
+/* LANGUAGE DROPDOWN */
+.lang-select {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 5px;
   font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-.actions {
+.lang-select i {
+  font-size: 18px;
+}
+
+/* BOTTOM NAVIGATION ROW */
+.nav-bottom {
   display: flex;
-  gap: 16px;
-  font-size: 14px;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0 30px 0;
 }
 
+.nav-bottom p {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #252020;
+  transition: color 0.2s;
+}
+
+.nav-bottom p:hover {
+  color: #888;
+}
+
+/* Mobile responsive - Hide bottom nav or shrink logo */
 @media (max-width: 768px) {
-  .menu {
-    display: none;
+  .nav-bottom {
+    display: none; /* Usually hidden on mobile in these designs */
+  }
+  .nav-logo {
+    font-size: 24px;
   }
 }

@@ -1,11 +1,45 @@
-.filter-header {
-  padding: 0 24px;
-  margin-bottom: 10px;
+.top-bar-wrapper {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.filter-header button {
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  background: white;
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-count {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.filter-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #777;
+  text-transform: uppercase;
   cursor: pointer;
+}
+
+.filter-toggle-btn:hover {
+  color: #000;
+}
+
+.layout {
+  display: flex;
+  gap: 40px;
+  padding-top: 30px;
+}
+
+.full-width .sidebar {
+  display: none;
 }

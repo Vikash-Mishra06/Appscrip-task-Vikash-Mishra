@@ -1,21 +1,74 @@
 .sidebar {
-  width: 240px;
-  border-right: 1px solid #eee;
-  padding-right: 16px;
+  width: 260px;
+  flex-shrink: 0;
 }
 
-.filter-group {
-  margin-top: 16px;
+.customizable-section {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: 700;
   font-size: 14px;
 }
 
-.filter-group label {
-  display: block;
-  margin-top: 6px;
+.filter-group {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #252020;
+}
+
+.filter-subtitle {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #252020;
+  font-weight: 400; /* Lighter weight for "All" */
+}
+
+/* Updated Arrow Styling */
+.filter-arrow {
+  font-size: 20px;
+  color: #252020;
+  transition: transform 0.3s ease;
+}
+
+/* If you later want to rotate it when open */
+.filter-group.open .filter-arrow {
+  transform: rotate(180deg);
+}
+
+.unselect-btn {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: #BFC8CD;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 10px 0;
+  display: block;
+}
+
+.checkbox-container {
+  display: flex; /* Better alignment for text and box */
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }

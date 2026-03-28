@@ -27,15 +27,40 @@
   object-fit: contain;
 }
 
+.card-content {
+  margin-top: 10px;
+}
+
 .product-title {
   font-size: 14px;
-  margin-top: 12px;
   line-height: 1.4;
   height: 40px;
   overflow: hidden;
 }
 
+.login-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
 .product-price {
   font-weight: 600;
-  margin-top: 6px;
+}
+
+.heart {
+  cursor: pointer;
+  font-size: 16px;
+  color: #aaa;
+}
+
+.heart.active {
+  color: red;
 }

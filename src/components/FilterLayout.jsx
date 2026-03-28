@@ -3,25 +3,57 @@
 import { useState } from "react";
 import FilterSidebar from "./FilterSidebar";
 import ProductGrid from "./ProductGrid";
+import SortDropdown from "./SortDropdown";
 import "./filterLayout.css";
 
 export default function FilterLayout({ products }) {
-  // state to show/hide sidebar
   const [showFilters, setShowFilters] = useState(true);
 
   return (
     <div>
 
-      {/* toggle button */}
-      <div className="filter-header">
-        <button onClick={() => setShowFilters(!showFilters)}>
-          {showFilters ? "Hide Filters" : "Show Filters"}
-        </button>
+      <div className="top-bar-wrapper">
+        <div className="container">
+
+          <div className="top-bar">
+
+            <div className="left-section">
+              <p className="item-count">3425 ITEMS</p>
+
+              <button
+                className="filter-toggle-btn"
+                onClick={() => setShowFilters(!showFilters)}
+              >
+                {showFilters ? (
+                  <>
+                    <i className="ri-arrow-left-s-line"></i>
+                    <span className="btn-text">HIDE FILTER</span>
+                  </>
+                ) : (
+                  <>
+                    <i className="ri-arrow-right-s-line"></i>
+                    <span className="btn-text">SHOW FILTER</span>
+                  </>
+                )}
+              </button>
+            </div>
+
+            <div className="right-section">
+              <SortDropdown />
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
-      <div className="layout">
-        {showFilters && <FilterSidebar />}
-        <ProductGrid products={products} />
+      <div className="container">
+        <div className={`layout ${showFilters ? "" : "full-width"}`}>
+          {showFilters && <FilterSidebar />}
+          <div className="container">
+            <ProductGrid products={products} />
+          </div>
+        </div>
       </div>
 
     </div>
