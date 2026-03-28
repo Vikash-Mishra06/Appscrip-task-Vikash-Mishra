@@ -4,3 +4,24 @@
   gap: 20px;
   flex: 1;
 }
+
+/* tablet */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* small mobile */
+/* @media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+} */

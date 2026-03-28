@@ -3,3 +3,11 @@
   gap: 24px;
   padding: 0 24px 40px;
 }
+
+/* mobile layout */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    padding: 0 16px 30px;
+  }
+}
