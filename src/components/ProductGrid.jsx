@@ -1,14 +1,11 @@
 import ProductCard from "./ProductCard";
 import "./productGrid.css";
 
-export default function ProductGrid() {
-  // dummy products for layout
-  const items = new Array(12).fill(0);
-
+export default function ProductGrid({ products }) {
   return (
     <div className="product-grid">
-      {items.map((_, index) => (
-        <ProductCard key={index} />
+      {products.map((item) => (
+        <ProductCard key={item.id} product={item} />
       ))}
     </div>
   );
