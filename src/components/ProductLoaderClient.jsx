@@ -11,22 +11,16 @@ export default function ProductLoaderClient({ products: serverProducts }) {
 
   useEffect(() => {
     if (serverProducts?.length === 0 && !loading) {
-      const load = async () => {
-        setLoading(true);
-        try {
-          const data = await clientGetProducts();
-          setLocalProducts(data);
-        } catch (err) {
-          console.error("Client fetch failed", err);
-        } finally {
-          setLoading(false);
-        }
-      };
-      load();
-    } else {
-      setLocalProducts(serverProducts);
+      setLoading(true);
+      clientGetProducts().then(data => {
+        setLocalProducts(data);
+        setLoading(false);
+      }).catch(err => {
+        console.error("Client fetch failed", err);
+        setLoading(false);
+      });
     }
-  }, [serverProducts, loading]);
+  }, []); // empty deps - run once
 
   if (loading) {
     return <div className="product-loading">Loading products...</div>;
