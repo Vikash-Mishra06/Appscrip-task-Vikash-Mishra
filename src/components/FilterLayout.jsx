@@ -46,12 +46,9 @@ export default function FilterLayout({ products }) {
       <div className="container">
         <div className={`layout ${showFilters ? "" : "full-width"}`}>
           {showFilters && <FilterSidebar />}
-          <div className="container">
-            <ProductGrid products={products} showFilters={showFilters} />
-          </div>
+          <ProductGrid products={products} showFilters={showFilters} />
         </div>
       </div>
-
     </div>
   );
 }

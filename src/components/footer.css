@@ -219,3 +219,19 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+}

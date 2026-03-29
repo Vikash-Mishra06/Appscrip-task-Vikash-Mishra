@@ -77,3 +77,18 @@
   gap: 8px;
   justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+  .product-card {
+    padding: 12px;
+  }
+
+  .product-title {
+    font-size: 12px;
+    height: auto;
+  }
+
+  .product-price {
+    font-size: 13px;
+  }
+}

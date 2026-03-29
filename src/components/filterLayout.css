@@ -61,3 +61,32 @@
 .arrow.rotate {
   transform: rotate(180deg);
 }
+
+/* mobile filter bar */
+@media (max-width: 768px) {
+  .top-bar {
+    justify-content: space-between;
+  }
+
+  .left-section {
+    gap: 0;
+  }
+
+  .item-count {
+    display: none;
+  }
+
+  /* create mobile tabs */
+  .top-bar::before {
+    font-weight: 600;
+  }
+
+  .right-section {
+    position: relative;
+  }
+
+  .right-section::before {
+    font-weight: 600;
+    margin-right: 6px;
+  }
+}

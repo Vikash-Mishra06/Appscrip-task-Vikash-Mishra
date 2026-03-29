@@ -100,3 +100,47 @@
     font-size: 24px;
   }
 }
+
+/* hide menu on desktop */
+.menu-icon {
+  display: none;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ri-user-line {
+    display: none;
+  }
+
+  .lang-select {
+    display: none;
+  }
+  
+  .nav-top {
+    height: 60px;
+  }
+
+  .nav-actions {
+    gap: 14px;
+  }
+
+  .nav-logo {
+    font-size: 18px;
+  }
+
+  .nav-left {
+    gap: 10px;
+  }
+}
