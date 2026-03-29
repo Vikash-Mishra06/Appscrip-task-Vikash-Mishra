@@ -54,25 +54,6 @@ The application is built using server-side rendering and a clean component-based
 
 ---
 
-## Folder Structure
-
-src/
- ├── components/
- │   ├── Navbar.jsx
- │   ├── Header.jsx
- │   ├── FilterLayout.jsx
- │   ├── FilterSidebar.jsx
- │   ├── ProductGrid.jsx
- │   ├── ProductCard.jsx
- │   ├── SortDropdown.jsx
- │   └── Footer.jsx
- ├── lib/
- │   └── api.js
- └── app/
-     └── page.js
-
----
-
 ## Installation & Setup
 
 Clone the repository and install dependencies:
