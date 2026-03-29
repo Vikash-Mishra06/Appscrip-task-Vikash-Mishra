@@ -1,6 +1,6 @@
 .top-bar-wrapper {
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .top-bar {
@@ -13,7 +13,7 @@
 .left-section {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 60px;
 }
 
 .item-count {
@@ -42,4 +42,8 @@
 
 .full-width .sidebar {
   display: none;
+}
+
+.btn-text {
+  text-decoration: underline;
 }

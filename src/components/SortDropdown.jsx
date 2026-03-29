@@ -16,8 +16,12 @@ export default function SortDropdown() {
 
   return (
     <div className="sort-container">
-      <button className="sort-button" onClick={() => setOpen(!open)}>
-        {selected} <span className={`arrow ${open ? 'up' : ''}`}><i class="ri-arrow-down-s-line"></i></span>
+      <button
+        className="sort-button"
+        onClick={() => setOpen(!open)}
+      >
+        {selected}
+        <span className={`arrow ${open ? "rotate" : ""}`}><i class="ri-arrow-down-s-line"></i></span>
       </button>
 
       {open && (
@@ -25,14 +29,16 @@ export default function SortDropdown() {
           {options.map((item) => (
             <div
               key={item}
-              className="dropdown-item"
+              className={`dropdown-item ${
+                selected === item ? "active" : ""
+              }`}
               onClick={() => {
                 setSelected(item);
                 setOpen(false);
               }}
             >
               {selected === item && <span className="check">✓</span>}
-              <span className={selected === item ? "bold-text" : ""}>{item}</span>
+              {item}
             </div>
           ))}
         </div>

@@ -72,3 +72,12 @@
   height: 16px;
   cursor: pointer;
 }
+
+.arrow {
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
