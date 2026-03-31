@@ -21,7 +21,7 @@ export default function SortDropdown() {
         onClick={() => setOpen(!open)}
       >
         {selected}
-        <span className={`arrow ${open ? "rotate" : ""}`}><i class="ri-arrow-down-s-line"></i></span>
+        <span className={`arrow ${open ? "rotate" : ""}`}><i className="ri-arrow-down-s-line"></i></span>
       </button>
 
       {open && (

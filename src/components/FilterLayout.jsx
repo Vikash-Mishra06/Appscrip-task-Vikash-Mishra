@@ -25,7 +25,7 @@ export default function FilterLayout({ products }) {
                 onClick={() => setShowFilters(!showFilters)}
               >
                 <span className={`arrow ${showFilters ? "rotate" : ""}`}>
-                  <i class="ri-arrow-right-s-line"></i>
+                  <i className="ri-arrow-right-s-line"></i>
                 </span>
 
                 <span className="btn-text">

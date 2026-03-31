@@ -39,7 +39,7 @@ export default function FilterSidebar() {
               }
             >
               <span className="filter-title">{cat}</span>
-              <span className={`arrow ${isOpen ? "rotate" : ""}`}><i class="ri-arrow-down-s-line"></i></span>
+              <span className={`arrow ${isOpen ? "rotate" : ""}`}><i className="ri-arrow-down-s-line"></i></span>
             </div>
 
             <p className="filter-subtitle">All</p>

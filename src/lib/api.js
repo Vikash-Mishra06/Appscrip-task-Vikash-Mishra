@@ -1,6 +1,9 @@
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+
 export async function getProducts() {
   try {
-    const res = await fetch("https://fakestoreapi.com/products", {
+    const url = `${API_BASE}/api/products`;
+    const res = await fetch(url, {
       cache: "no-store",
     });
 
@@ -16,7 +19,7 @@ export async function getProducts() {
 }
 
 export function clientGetProducts() {
-  return fetch("https://fakestoreapi.com/products")
+  return fetch("/api/products")
     .then(res => {
       if (!res.ok) throw new Error("Failed to fetch");
       return res.json();
