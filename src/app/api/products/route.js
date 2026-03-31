@@ -6,35 +6,35 @@ const FALLBACK_PRODUCTS = [
     id: 1,
     title: "Summer Women's Fashion",
     price: 29.99,
-    image: "https://via.placeholder.com/300x400?text=Summer+Fashion",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23f0f0f0' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3ESummer Fashion%3C/text%3E%3C/svg%3E",
     description: "Beautiful summer collection for women"
   },
   {
     id: 2,
     title: "Premium Casual Shirt",
     price: 39.99,
-    image: "https://via.placeholder.com/300x400?text=Casual+Shirt",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23e8e8e8' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3ECasual Shirt%3C/text%3E%3C/svg%3E",
     description: "Comfortable and stylish casual shirt"
   },
   {
     id: 3,
     title: "Elegant Dress",
     price: 49.99,
-    image: "https://via.placeholder.com/300x400?text=Dress",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23f5f5f5' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3EElegant Dress%3C/text%3E%3C/svg%3E",
     description: "Perfect for any occasion"
   },
   {
     id: 4,
     title: "Classic Jeans",
     price: 59.99,
-    image: "https://via.placeholder.com/300x400?text=Jeans",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23efefef' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3EClassic Jeans%3C/text%3E%3C/svg%3E",
     description: "Timeless denim classic"
   },
   {
     id: 5,
     title: "Lightweight Jacket",
     price: 69.99,
-    image: "https://via.placeholder.com/300x400?text=Jacket",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23f2f2f2' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3EJacket%3C/text%3E%3C/svg%3E",
     description: "Perfect layer for any season"
   },
 ];
